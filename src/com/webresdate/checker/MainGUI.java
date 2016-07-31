@@ -68,7 +68,7 @@ public class MainGUI {
 					long date = httpCon.getLastModified();
 					if (date != 0) {
 						httpCon.disconnect();
-						msgBox("Last Modified:" + new Date(date).toString(), "Resource");
+						msgBox("Last Modified:\n" + new Date(date).toString(), "Resource");
 					}
 					else
 						msgBox("Last Modified date not available", "Resource");
