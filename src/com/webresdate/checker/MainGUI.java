@@ -72,6 +72,7 @@ public class MainGUI {
 						msgBox("Last Modified date not available", "Resource");
 				} catch (Exception e) {
 					e.printStackTrace();
+					msgBox("Resource is unreachable\nMake sure URL starts with http:// or https://", "Resource");
 				}
 			}
 		});
