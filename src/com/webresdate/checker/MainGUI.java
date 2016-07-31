@@ -63,6 +63,8 @@ public class MainGUI {
 				try {
 					URL url = new URL(textField.getText());
 					HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+					//Next line is required to avoid HTTP_RESPONSE_CODE_403 from most web-servers
+					httpCon.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0"); 
 					long date = httpCon.getLastModified();
 					if (date != 0) {
 						httpCon.disconnect();
