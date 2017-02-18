@@ -6,7 +6,7 @@
  Description      : Webres Date Checker is a simple program written in Java which gives the Last-Modified
                     timestamp of any resources hosted on the Internet.
  Requirements     : No particular requirements
- Usage            : java -jar WebresDateChecker.java
+ Usage            : java -jar WebresDateChecker.jar
  Tested in        : Linux Mint 18.1 / Microsoft Windows 7
  Author's Website : https://clementcampagna.net
 
